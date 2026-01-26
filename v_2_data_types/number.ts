@@ -13,6 +13,6 @@ console.log(typeof item2Converted);
 console.log(item1 + item2Converted);
 console.log(item1 + +item3); // using Unary plus
 
-let data: number | string = 90;
+let data: number | string = 90; // union | (OR)
 data = "hridoy saha";
 console.log(data);
