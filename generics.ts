@@ -16,12 +16,14 @@ type Coordinates<X, Y> = [X, Y];
 const coOrdinateOne: Coordinates<string, number> = ["20", 40];
 const coOrdinateTwo: Coordinates<number, number> = [40, 50];
 
-const userList: GenericArray<{
+// how to use generic type in Array of Object
+type User = {
   name: string;
   age: number;
   roll?: number;
   fevouriteColor?: string;
-}> = [
+};
+const userList: GenericArray<User> = [
   {
     name: "mr. X",
     age: 22,
